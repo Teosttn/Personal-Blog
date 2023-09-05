@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '小小二次元'
-subtitle: '夜空中的弧光'
+title: '夜空中的弧光 '
+subtitle: '不可胜数的奇迹，于眼前展翅高飞'
 description: ''
 keywords:
 author: Aerozw
@@ -68,6 +68,10 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  日记: diary
+  相册: album
+  学习: study
+  随笔: jottings
 tag_map:
 
 # Metadata elements
