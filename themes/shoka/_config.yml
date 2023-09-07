@@ -163,7 +163,7 @@ post:
 # Reward (Donate)
 reward:
   # If true, reward will be displayed in every article by default.
-  enable: true
+  enable: false
   account:
     wechatpay: /wechatpay.png
     alipay: /alipay.png
@@ -196,25 +196,23 @@ creative_commons:
 # Valine
 # For more information: https://github.com/amehime/MiniValine
 valine:
-  appId: #Your_appId
-  appKey: #Your_appkey
-  placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
+  appId: aUIPTmlkVsqIJSBl8TEr3QOF-gzGzoHsz
+  appKey: 5PwMOnP5ai9FUnKo7ElJIK1f
+  placeholder: 欢迎评论喵ヽ(`o.o`)/ # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
   pageSize: 10 # Pagination size
-  lang: en
+  lang: zh-CN
   visitor: true # Article reading statistic
   NoRecordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   powerMode: true
   tagMeta:
-    visitor: 新朋友
+    visitor: 访客
     master: 主人
-    friend: 小伙伴
-    investor: 金主粑粑
+    friend: 朋友
   tagColor:
     master: "var(--color-orange)"
     friend: "var(--color-aqua)"
-    investor: "var(--color-pink)"
   tagMember:
     master:
       # - hash of master@email.com
@@ -222,8 +220,6 @@ valine:
     friend:
       # - hash of friend@email.com
       # - hash of friend2@email.com
-    investor:
-      # - hash of investor1@email.com
 
 # bgm
 audio:
