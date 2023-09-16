@@ -14,7 +14,7 @@ categories:
 我接触到Electron是由于暑期接到的一个项目 
 认为Electron对于有一定前段基础的人:blush: 
 具有以下优点:
-* 学习成本低，不需要桌面开发经理
+* 学习成本低，不需要桌面开发经历
 * 构建快速，功能强大
 * 满足制作个人软件的需求
 * 具有跨平台功能
@@ -239,4 +239,4 @@ ipcMain.on("getDataList",async(event) => {
 > * https://zhuanlan.zhihu.com/p/379637956#%E6%A6%82%E8%A7%88
 > * https://zhuanlan.zhihu.com/p/625409105
 > * https://zhuanlan.zhihu.com/p/428560381
-> 如有问题请指正！
+> 如有问题欢迎指正！
