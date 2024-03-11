@@ -39,7 +39,8 @@ sudo apt install subversion
 
 # SVN操作
 :::info no-icon
-SVN安装完成之后进行一些基本操作
+SVN安装完成之后进行一些基本指令操作 
+Windows TortoiseSVN图形化界面清晰 只需要跟着指令即可正常操作
 :::
 
 1. Checkout 提取代码
@@ -53,7 +54,46 @@ svn checkout server_path local_path
 svn co s_p l_p
 ```
 
+2. Add 添加新文件
+:::primary no-icon
+将本地文件添加到暂存区
+:::
 
-2. Commit 提交代码
-3. Update 更新代码
+```bash
+svn add file_name
+```
 
+3. Commit 提交代码
+:::warning no-icon
+将本地做出修改的代码提交到SVN仓库
+:::
+
+```bash
+# 此操作是将刚刚通过add指令添加到暂存区里面的文件提交到SVN仓库里面
+svn commit -m "备注"
+
+# 该指令的简写如下
+svn ci -m "..."
+```
+
+4. Update 更新代码
+> 用于更新代码到最新的版本 
+> 类似于Git的pull操作
+
+```bash
+svn update
+```
+5.Revert 撤销更改
+:::info no-icon
+这个操作可以撤销本地上做出的还未进行commit的更改
+:::
+
+```bash
+svn revert file_name
+```
+
+6.其他操作
+> SVN还可以查看版本日志 比较差异等
+> 同样也可以像Git一样解决冲突
+
+> 如有问题欢迎指正
