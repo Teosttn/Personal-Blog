@@ -83,7 +83,7 @@ svn ci -m "..."
 ```bash
 svn update
 ```
-5.Revert 撤销更改
+5. Revert 撤销更改
 :::info no-icon
 这个操作可以撤销本地上做出的还未进行commit的更改
 :::
@@ -92,7 +92,7 @@ svn update
 svn revert file_name
 ```
 
-6.其他操作
+6. 其他操作
 > SVN还可以查看版本日志 比较差异等
 > 同样也可以像Git一样解决冲突
 
