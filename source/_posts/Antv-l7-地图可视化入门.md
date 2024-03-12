@@ -3,7 +3,7 @@ title: AntV/l7-地图可视化入门
 date: 2023-09-15 14:52:52
 tags:
 categories:
-- [学习,前端]
+- [学习,前端,vue]
 ---
 
 # 引言 

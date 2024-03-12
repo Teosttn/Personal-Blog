@@ -3,7 +3,7 @@ title: 浅谈Electron+vue
 date: 2023-09-11 14:23:13
 tags:
 categories:
-- [学习,前端]
+- [学习,前端,vue]
 ---
 
 # 引言
