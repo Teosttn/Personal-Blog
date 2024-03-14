@@ -12,7 +12,6 @@ TypeScript是JavaScript的超集
 可以被编译成纯净的JavaScript 
 与JS区分的就是[强类型语言].{purple}的特点
 :::
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/36561e7654a34197a31724ed0bfb6857~tplv-k3u1fbpfcp-watermark.image?)
 
 # TypeScript基础 
 
@@ -140,6 +139,7 @@ var也不会限制一个变量的多次声明
 接口的作用是为各种类型自定义命名
 :::
 
+### 接口的基本使用
 ```ts
 interface exampleElement{
   value: string;
@@ -149,6 +149,52 @@ function printValue(element: exampleElement){
   console.log(element.value);
 }
 
+let testObj: object = {
+  value: 'thing',
+  name: 'testObj'
+};
+
+printValue(testObj);
 // 只要传入的element满足exampleElement的要求
 // 这个操作就被类型选择器所允许
 ```
+
+### 接口的属性定义
+```ts
+// 可选属性
+// 对可能存在的属性进行预定义，可以捕获引用了不存在的属性时产生的错误
+interface SquareConfig {
+  color?: string;
+  width?: number;
+}
+
+// 只读属性
+// 该属性只能在对象刚刚创建的时候修改值
+interface Point {
+    readonly x: number;
+    readonly y: number;
+}
+```
+### 接口的函数类型
+```ts
+interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string): boolean {
+  let result = source.search(subString);
+  return result > -1;
+}
+```
+
+:::info no-icon
+ 以上就是TypeScript的一些简单的使用
+ 可以满足日常小项目或者一些组件的阅读问题 
+:::
+
+> 参考链接：
+> https://www.tslang.cn/docs/handbook/generics.html
+> https://juejin.cn/post/7231804748092244023
+
+> 如有问题欢迎指正
